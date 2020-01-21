@@ -6,6 +6,8 @@ USE burger_DB;
 
 CREATE TABLE products (
     id INT NOT NULL AUTO_INCREMENT,
-    burger_name: VARCHAR(50) NOT NULL,
-    completed BOOLEAN
-)
+    burger_name VARCHAR(50) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE,
+    PRIMARY KEY(id)
+);
+
