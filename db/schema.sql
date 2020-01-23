@@ -4,10 +4,9 @@ CREATE DATABASE burger_DB;
 
 USE burger_DB;
 
-CREATE TABLE products (
+CREATE TABLE burgers (
     id INT NOT NULL AUTO_INCREMENT,
     burger_name VARCHAR(50) NOT NULL,
     completed BOOLEAN DEFAULT FALSE,
     PRIMARY KEY(id)
 );
-
