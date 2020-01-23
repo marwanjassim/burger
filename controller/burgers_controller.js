@@ -14,5 +14,15 @@ router.get("/", function(req, res) {
     });
   });
 });
+router.post("/devour/:id", function(req, response) {
+  burger.devourBurger(req.params.id, function(err, result) {
+    if (err) {
+      console.log(err);
+      return response.status(404).end();
+    }
 
+    // Redirect back to home
+    response.redirect("/");
+  });
+});
 module.exports = router;
